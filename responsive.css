@@ -1,0 +1,104 @@
+/*-------------------------------------------------------------------------------------------*/
+/*- MEDIA QUERIES ---------------------------------------------------------------------------*/
+/*-------------------------------------------------------------------------------------------*/
+
+/*------------------------------------------------*/
+/* layouts smaller than 600px, iPhone and mobiles */
+@media only screen and (max-width: 480px), screen and (max-device-width: 480px), screen and (max-width: 600px) {
+	html {-webkit-text-size-adjust: none;}
+	body{font-size: 15px;}
+	#header-container{float: none; width: auto; padding: 20px 0px; position: relative;}
+	#header-banner{height: 250px; margin: 0px; padding-top: 0px;}
+	#content-container{float: none; width: auto; min-height: 300px; padding: 50px 20px 20px; margin: 0px; position: relative;}
+	#footer-container{display: block; clear: both; padding: 20px; margin: auto; overflow: hidden; background: #f5f5f5;}
+	#footer{padding: 0px; border: none;}
+	
+	#left-column{float: none; width: 100%;}
+	#right-column{float: none; width: 100%;}
+	
+	.sidebarleft #left-column{float: none; width: 100%;}
+	.sidebarleft #right-column{float: none; width: 100%;}
+	
+	.sidebarnone #left-column{float: none; margin: 0 auto; width: auto; max-width: 940px;}
+	.sidebarnone #left-column .copy, .sidebarnone #left-column .post-title-block{padding: 0px 0px;}
+	.sidebarnone #left-column .comments, .sidebarnone #left-column .post-meta{padding-left: 0px; padding-right: 0px;}
+	
+	.logo{float: none; margin: 0px;}
+	
+	#menu-drop-button{display: block; height: 30px; width: 30px; position: absolute; top: 0px; left: 20px;  background: #f0f0f0 url(images/layout/drop-down.png) center no-repeat; background-size: 60px 60px; border-radius: 0px 0px 5px 5px;}
+	
+	ul#nav{display: none; clear: both; padding: 0px; margin: 20px -20px -20px; background: #333; position: relative; right: 0;}
+	ul#nav li{float: none; width: 100%; margin: 0px; padding: 0px 0px;}
+	ul#nav li a{display: block; padding: 10px 20px; border-bottom: 1px dotted #555; color: #ccc;}
+	ul#nav li a:hover{color: #fff;}
+	ul#nav li ul{display: none !important;}
+	
+	.post-title-block{text-align: left;}
+	.post-title-block .post-title{font-size: 35px; line-height: 35px; margin: 0px 0px 15px;}
+	.post-title-block .date{margin-bottom: 20px;}
+	
+	.column{clear: both !important; width: 100% !important;}
+	.one-column .copy{padding: 0px;}
+	.one-column .column .copy {padding: 0px !important;}
+
+	.blog-main-post-container .post-image, .single .post-image{margin-bottom: 20px;}
+	
+	.copy blockquote{padding-left: 30px; margin: 30px 0px; font-weight: 900; font-size: 20px; line-height: 1.35em; border-left: 10px solid #f0f0f0;}
+	
+	.post-meta li.meta-block{float: none; margin: 0px 0px 10px;}
+	.post-meta li.meta-block.social{float: none;}
+	
+	.one-column .column{margin-bottom: 40px; padding-bottom: 40px; border-bottom: 1px solid #CCCAB1;}
+	.one-column .post-title{text-align: left; font-size: 35px; line-height: 35px; margin: 0px 0px 15px;}
+	.one-column .date{text-align: left; margin-bottom: 20px;}
+	.one-column .post-image{margin: 0px 0px 20px;}
+	
+	.one-column .post-meta{margin: 0px; padding: 0px;}
+	.one-column .post-meta li{float: none; width: 100%; position: relative; margin-top: 10px; line-height: 50px; border-bottom: none;}
+	.one-column .post-meta .post-author{padding: 0px 0px 0px 50px; text-align: left; border: none;}
+	.one-column .post-meta .post-comments{padding: 0px 0px 0px 50px; text-align: left;}
+	
+	.four-column .post-image{max-width: none;}
+	
+	.comments-icon{left: 0px; right: auto; background-image: url(images/layout/bubble-icon.png); background-repeat: no-repeat; background-position: 9px 9px;}
+	
+	.portfolio-title-block .post-title{text-align: left; font-size: 35px; line-height: 35px; margin: 0px 0px 15px;}
+	.portfolio-category-list{text-align: left;}
+	
+	.two-column.portfolio-list li, .portfolio-list li{float: none; width: 100%; margin: 0 0 40px 0;}
+	
+	.portfolio-content #left-column{width: 100%; float: none !important; padding-bottom: 20px; border-bottom: none;}
+	.portfolio-content #right-column{width: 100%; float: none !important;}
+	
+	.footer-widgets .widget{float: none; width: 100%; margin: 0 0 20px;}
+	.copyright{float: none;}
+	.obox-credit{float: none;}
+	
+	.full-width .copy, .full-width .comments, .full-width .post-meta{padding: 0px;}
+	
+}
+
+/*---------------*/
+/* iPad PORTRAIT */
+@media only screen and (max-width: 768px) and (min-width: 600px) {
+	.logo{float: none;}
+	ul#nav{float: none; clear: both; padding: 0px 20px; margin: 20px 0px 0px; position: relative;}	
+	ul#nav li{margin-left: 0; margin-right: 20px;}
+	
+	#content-container{padding: 160px 20px 0;}
+	
+	.copyright{float: none; text-align: center;}
+	.obox-credit{float: none; text-align: center;}
+}
+
+
+/*---------------*/
+/* RETINA ICONS  */
+@media screen and (-webkit-min-device-pixel-ratio: 2), screen and (max--moz-device-pixel-ratio: 2) {
+#menu-drop-button { 
+    background: #f0f0f0 url(images/layout/drop-down.png) center no-repeat;
+    background-size: 60px 60px;
+    height: 30px;
+    width: 30px;
+}
+}
